@@ -132,6 +132,11 @@ Table of content:
 .bg-grey{background-color: var(--bg-grey) !important}
 .bg-gradient-1{  background: -moz-linear-gradient(var(--bg-gradient-1)) !important;  background: -webkit-linear-gradient(var(--bg-gradient-1)) !important;background: linear-gradient(var(--bg-gradient-1)) !important;
 }
+ul{
+  list-style-type: none;
+}
+
+
 /* base color */
 .id-color{color:var(--primary-color)}
 .rounded-1{
