@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
-<!-- Mirrored from madebydesignesia.com/themes/homely/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jan 2026 10:40:25 GMT -->
 <head>
     <title>Olive Leaf Enterprises LLC</title>
     <link rel="icon" href="images/icon.webp" type="image/gif" sizes="16x16">
@@ -43,13 +41,13 @@
 
                         <div class="de-flex-col">
                             <div class="de-flex-col header-col-mid">
-                                <ul id="mainmenu">
-                                  
-                                    <li><a class="menu-item" href="/index.html">Home</a></li>
-                                    <li><a class="menu-item" href="about.html">About</a></li>
-                                    <li><a class="menu-item" href="/preforeclosure.html">Pre-Foreclosure Guidance</a></li>
-                                    <li><a class="menu-item" href="/sellingproperty.html">Selling Your Property</a></li>
-                                    <li><a class="menu-item" href="/homeowner.html">How We May Work With </a></li>
+                                  <ul id="mainmenu">
+                                   <li><a class="menu-item" href="./index.html">Home</a></li>
+                                    <li><a class="menu-item" href="./about.html">About</a></li>
+                                    <li><a class="menu-item" href="./preforeclosure.html">Pre-Foreclosure</a></li>
+                                    <li><a class="menu-item" href="./sellingproperty.html">Selling</a></li>
+                                    <li><a class="menu-item" href="./homeowner.html">Work With Homeowners </a></li>
+                                    <li><a class="menu-item" href="./importantdisclosures.html">Important Disclosures </a></li>
                                 </ul>
                             </div>
                         </div>
@@ -98,17 +96,39 @@
                         <h2 class="wow fadeInUp" data-wow-delay=".2s">Explore Your Property Options</h2>
                         <p class="wow fadeInUp" data-wow-delay=".5s">Interested in this property or ready to see it in person? Send us your request and we’ll arrange a visit at your convenience.</p>
                         
-                        <!-- <div class="mt-4 wow fadeInUp" data-wow-delay=".6s">
-                            <img src="images/team/1.webp" class="w-80px circle" alt="">
-                            <div class="mt-3">
-                                <h4 class="mb-0">Emily Rodriguez</h4>
-                                <div class="fw-500 id-color">(+1) 234-5678</div>
-                            </div>
-                        </div> -->
+                       
                     </div>
 
                     <div class="col-lg-8 wow fadeInUp" data-wow-delay=".8s">
-                        <form name="contactForm" id="contact_form" method="post" action="https://madebydesignesia.com/themes/homely/visit.php">
+                        <form name="contactForm" id="contact_form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                            <input type="hidden" name="form-name" value="contactForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="address" class="form-control" placeholder="Address" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" class="form-control h-100px" placeholder="Tell us your preferred date, time, or any questions" required></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <div id='submit'>
+                                        <input type='submit' id='send_message' value='Submit' class="btn-main">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                        <div id="success_message" class="alert alert-success mt-4" role="alert" style="display: none;">
+                            <h5 class="mb-2">✓ Message Sent Successfully!</h5>
+                            <p class="mb-0">Thank you for reaching out. Our team will review your inquiry and contact you shortly.</p>
+                        </div>
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
@@ -164,13 +184,13 @@
                         </div>
                         <div>
                             <h3 class="fs-20">Quick Links</h3>
-                            <ul class="p-0">
-                                    <li><a class="menu-item" href="/index.html">Home</a></li>
-                                    <li><a class="menu-item" href="about.html">About</a></li>
-                                    <li><a class="menu-item" href="/preforeclosure.html">Pre-Foreclosure Guidance</a></li>
-                                    <li><a class="menu-item" href="/sellingproperty.html">Selling Your Property</a></li>
-                                    <li><a class="menu-item" href="/homeowner.html">How We May Work With </a></li>
-                                </ul>
+                             <ul class="p-0">
+                                    <li><a class="menu-item" href="./index.html">Home</a></li>
+                                    <li><a class="menu-item" href="./about.html">About</a></li>
+                                    <li><a class="menu-item" href="./preforeclosure.html">Pre-Foreclosure Guidance</a></li>
+                                    <li><a class="menu-item" href="./sellingproperty.html">Selling Your Property</a></li>
+                                    <li><a class="menu-item" href="./homeowner.html">Work With Homeowners </a></li>                                    <li><a class="menu-item" href="./privacypolicy.html">Privacy Policy</a></li>
+                                    <li><a class="menu-item" href="./importantdisclosures.html">Important Disclosures</a></li>                                </ul>
                         </div>
                         <div>
                             <h3 class="fs-20">Address</h3>
@@ -199,17 +219,12 @@
         </div>
     </footer>   
 
-    <!-- Javascript Files
-    ================================================== -->
+  
     <script src="js/vendors.js"></script>
     <script src="js/designesia.js"></script>
     
-    <!-- <div id="buy-now" class="show-on-scroll">
-        <a class="btn-buy" href="https://themeforest.net/item/homely-single-property-real-estate-html-template/61067617" target="_blank">Buy on <img src="demo/envato.svg" class="" alt=""></a>
-    </div> -->
+   
    
 </body>
 
-
-<!-- Mirrored from madebydesignesia.com/themes/homely/about.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jan 2026 10:40:25 GMT -->
 </html>
