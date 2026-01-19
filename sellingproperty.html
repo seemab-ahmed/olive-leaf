@@ -165,8 +165,30 @@
                     </div>
 
                     <div class="col-lg-8 wow fadeInUp" data-wow-delay=".8s">
-                        <form name="contactForm" id="contact_form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                        <form name="contactForm" method="post" data-netlify="true">
                             <input type="hidden" name="form-name" value="contactForm">
+                            <div class="row g-4">
+                                <div class="col-md-6">
+                                    <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" name="phone" class="form-control" placeholder="Phone Number" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" name="address" class="form-control" placeholder="Address" required>
+                                </div>
+                                <div class="col-md-12">
+                                    <textarea name="message" class="form-control h-100px" placeholder="Tell us your preferred date, time, or any questions" required></textarea>
+                                </div>
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn-main">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                             <div class="row g-4">
                                 <div class="col-md-6">
                                     <input type="text" name="name" class="form-control" placeholder="Name" required>

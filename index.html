@@ -676,7 +676,7 @@
                     </div>
 
                     <div class="col-lg-8 wow fadeInUp" data-wow-delay=".8s">
-                        <form name="contactForm" id="contact_form" method="post" data-netlify="true" netlify-honeypot="bot-field">
+                        <form name="contactForm" method="post" data-netlify="true">
                             <input type="hidden" name="form-name" value="contactForm">
                             <div class="row g-4">
                                 <div class="col-md-6">
@@ -695,16 +695,10 @@
                                     <textarea name="message" class="form-control h-100px" placeholder="Tell us your preferred date, time, or any questions" required></textarea>
                                 </div>
                                 <div class="col-md-12">
-                                    <div id='submit'>
-                                        <input type='submit' id='send_message' value='Submit' class="btn-main">
-                                    </div>
+                                    <button type="submit" class="btn-main">Submit</button>
                                 </div>
                             </div>
                         </form>
-                        <div id="success_message" class="alert alert-success mt-4" role="alert" style="display: none;">
-                            <h5 class="mb-2">✓ Message Sent Successfully!</h5>
-                            <p class="mb-0">Thank you for reaching out. Our team will review your inquiry and contact you shortly.</p>
-                        </div>
 
                     </div>
                 </div>
