@@ -12144,3 +12144,45 @@ img {
     width: auto;
   }
 }
+
+.footer-wrapper{
+  text-align: left !important;
+}
+.accordion-button {
+  line-height: 1.5 !important;
+}
+.left--right-wrapper{
+  flex-direction: row;
+}
+.left--sell{width: 40%;}
+.right--sell{width: 60%;}
+
+@media (max-width: 767px) {
+  .left--right-wrapper{
+  flex-direction: column;
+}
+  .left--sell, .right--sell{
+width: 100%;
+}
+.left--sell h2{
+        font-size: 35px;
+    }
+}
+@media (max-width: 567px) {
+.footer-wrapper{
+  text-align: center !important;
+}
+.testimonial--sell h6{
+  font-size: 14px;
+}
+.testimonial--sell small{
+  margin-bottom: -5px;
+}
+.f--desc{
+  margin:auto;
+}
+.ban--desc a{
+      padding: 4px 15px;
+    font-size: 14px;
+}
+}
