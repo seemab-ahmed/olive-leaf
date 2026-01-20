@@ -187,7 +187,7 @@ footer .widget a:hover, .id-color-2, .id-color-secondary, span.id-color-2, .icon
 
 body {
   background: var(--bg-default);
-  overflow-x: hidden;
+  overflow-y: hidden; 
   font-family: var(--body-font);
   font-size: var(--body-font-size);
   font-weight: var(--body-font-weight);;
@@ -11379,6 +11379,7 @@ img {
     width: 100%;
     padding-right: 30px;
     position: absolute;
+    padding-top: 75px;
   }
 
   header.header-mobile #mainmenu ul {
